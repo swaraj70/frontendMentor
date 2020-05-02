@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* General */
+*,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    height: auto;
+    width: 42%;
+    margin: 40px auto;
+}
+
+h1 {
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+
+.fontBold {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+
+h3 {
+    margin-top: 15px;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+
+
+/* Main */
+main {
+    
+    height: auto;
+    width: 80%;
+    margin: 20px auto;
+    column-count: 3;
+    column-gap: 3rem;
+}
+
+.card {
+    display: inline-block;
+    box-shadow: 0 7px 16px #d7e0ea;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+
+p {
+    margin-top: 15px;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+
+.c1 {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.c2 {
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.c3 {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.c4 {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.card:nth-child(3n + 1) {
+    display: block;
+    transform: translateY(50%);
+}
+
+.icon {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 25px 10px 20px auto;
+}
+
+
+/* Footer */
+footer {
+    margin: 0 20%;
+}
+
+.attribution { text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* Media Query */
+@media (max-width: 900px) {
+    header {
+        width: 80%;
+    }
+
+    main {
+        column-count: 1;
+    }
+
+    .card:nth-child(3n + 1) {
+        transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);    
+        -o-transform: translateY(-5px);
+    }
+
+    .card {
+        display: block;
+    }
+
+    footer {
+        margin: 0 10%;
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        width: 90%;
+        font-size: 12px;
+    }
+}
