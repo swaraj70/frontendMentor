@@ -159,7 +159,7 @@ main {
         font-size: 15px;
     }
 
-    br {
+    .item-1 br {
         display: none;
     }
 
